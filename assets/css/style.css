@@ -1,4 +1,78 @@
+body, html {
+    height: 100%;
+    margin: 0; 
+    background-image: url(../images/mendenhall-ice-caves-1500x609.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2; 
+}
+
+#title{
+    margin-top:2em;
+    margin-bottom:2em;
+}
+
+#random-number{
+    font-size: 2.2em;
+    color: rgb(243, 180, 8);  
+     
+}
+
 #score-box{
-    padding: 2em;
-    border: thick dotted hotpink;
+    margin: 0.5em;
+    padding: 0.5em;
+    border: thick dotted white;
+    width: 5em;
+    text-align: center;
+
+}
+
+.words{
+    color: white;
+    font-family: 'Berkshire Swash';
+    text-shadow: 2px 2px black;
+}
+
+.totals{
+    margin:0;
+    font-size: 1.4em;
+    color: rgba(243, 8, 192, 0.966);  
+}
+
+#wins{
+    font-size: 2.5em;
+    color: rgba(243, 8, 192, 0.966); 
+}
+
+#losses{
+    font-size: 2.5em;
+    color: rgba(243, 8, 192, 0.966); 
+}
+
+#total-score-text{
+    margin: 1em;
+    text-align: center;
+    font-size: 2em;
+    color: rgba(243, 8, 192, 0.966); 
+}
+
+#score{
+    font-size: 3em;
+    color: rgba(243, 8, 192, 0.966); 
+    font-family: 'Berkshire Swash';
+    text-shadow: 2px 2px black;
+}
+
+#instructions{
+    font-size: 1.2em;
+}
+
+p {
+
+}
+
+#total-score-sign{
+
 }

@@ -1,5 +1,15 @@
 // Prevent javascript from running before page is loaded.
 $(document).ready(function () {
+    // Adding a class and css styling
+    $("h1, p").addClass("words");
+    
+
+    // Adding font style using jquery
+
+    // I am using jquery to resize all my images FIXME: I cant figure out how to get rid of the white space around my images... 
+    $("img").css({"width": "9.25em", "height": "9.25em"});
+
+
 
     // These are my global variables which I should probably have less of
 
@@ -52,7 +62,7 @@ $(document).ready(function () {
 
         crystalArray = [];
 
-        crystalNumbers ();
+        crystalNumbers();
         
         // crystal1 = Math.floor(Math.random() * 12 + 1);
         
@@ -73,14 +83,14 @@ $(document).ready(function () {
     }
     
     // generate a random number at the beginning of each game
-    $(document).keyup(function startKey () {
+    $(document).keyup(function startKey() {
         
         $("#random-number").html(randomNumber);
     
     });
 
     // When you click a crystal the crystal is assigned a random value and adds it to the total score!
-    $("#crystal-1").on("click", function crystal1Click () {
+    $("#crystal-1").on("click", function crystal1Click() {
 
         $(this).val(crystalArray[0]);
         
