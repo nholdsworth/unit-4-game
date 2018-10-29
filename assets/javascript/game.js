@@ -8,6 +8,7 @@ $(document).ready(function () {
 
     // I am using jquery to resize all my images FIXME: I cant figure out how to get rid of the white space around my images... 
     $("img").css({"width": "9.25em", "height": "9.25em"});
+    
 
 
 
@@ -186,7 +187,7 @@ $(document).ready(function () {
         
         $(this).val(crystalArray[3]);
         
-        $("#score").html(score += crystalArray[4]);
+        $("#score").html(score += crystalArray[3]);
 
         if(score === randomNumber) {
             
@@ -210,7 +211,7 @@ $(document).ready(function () {
             losses ++;
 
             // FIXME:
-            $("#losses").html(`Total Losses:${ losses}!`);
+            $("#losses").html(losses);
         }
 
     });
